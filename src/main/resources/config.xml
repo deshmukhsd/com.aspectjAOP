@@ -14,6 +14,10 @@
         <property name = "name" value = "Zara" />
         <property name = "age"  value = "11"/>
     </bean>
+    <bean id = "dept" class = "org.example.Department">
+    </bean>
+    <bean id = "class" class = "org.example.ClassName">
+    </bean>
 
     <!-- Definition for logging aspect -->
     <bean id = "logging" class = "org.example.Logging"/>

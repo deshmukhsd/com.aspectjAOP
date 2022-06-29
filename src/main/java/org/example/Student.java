@@ -1,5 +1,8 @@
 package org.example;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Student {
     private Integer age;
     private String name;
@@ -24,5 +27,7 @@ public class Student {
     public void printThrowException() throws InterruptedException {
         Thread.sleep(2000);
         System.out.println("Exception raised");
+        Department dept=MainApp.context.getBean("dept",Department.class);
+        dept.deptNum();
     }
 }
